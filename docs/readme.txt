@@ -46,7 +46,7 @@ When writing your search string, make sure to wrap your search in forward slashe
 
 == Changelog ==
 
-= 2.6.6 (2024-08-14) =
+= 2.6.6 (2024-08-21) =
 * Fixed missing URL input sanitization.
 * Verified compatibility with WordPress 6.6
 
