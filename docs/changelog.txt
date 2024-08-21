@@ -1,3 +1,7 @@
+= 2.6.6 (2024-08-21) =
+* Fixed missing URL input sanitization.
+* Verified compatibility with WordPress 6.6
+
 = 2.6.5 (2024-03-12) =
 * Verified compatibility with WordPress 6.5
 
