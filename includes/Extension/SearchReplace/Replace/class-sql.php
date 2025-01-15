@@ -166,8 +166,14 @@ class SQL {
 	 */
 	public function recursive_unserialize_replace( $from = '', $to = '', $data = '', $serialised = false ) {
 		// Some unserialised data cannot be re-serialised eg. SimpleXMLElements.
+		global $wpdb;
+		
 		try {
-			$unserialized = @unserialize( $data );
+			$unserialized = false;
+			if ( ! empty( $data ) && ( $wpdb->prefix . 'comments' !== $this->table_name || 'comment_content' !== $this->column_name ) && is_serialized( $data ) ) {
+				$unserialized = @unserialize( $data, array( 'allowed_classes' => false ) );
+			}
+			
 			if ( is_string( $data ) && false !== $unserialized ) {
 				$data = $this->recursive_unserialize_replace( $from, $to, $unserialized, true );
 			} elseif ( is_array( $data ) ) {
