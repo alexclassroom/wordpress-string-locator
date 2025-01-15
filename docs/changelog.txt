@@ -1,3 +1,7 @@
+= 2.6.7 (2025-01-15) =
+* Fixed secured unserialized data handling to prevent potential vulnerabilities.
+* Verified compatibility with WordPress 6.7
+
 = 2.6.6 (2024-08-21) =
 * Fixed missing URL input sanitization.
 * Verified compatibility with WordPress 6.6

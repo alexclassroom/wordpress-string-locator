@@ -4,8 +4,8 @@ Author URI: https://instawp.com/?utm_source=sl_plugin_author
 Plugin URI: http://wordpress.org/plugins/string-locator/
 Tags: text, search, find, syntax, highlight
 Requires at least: 4.9
-Tested up to: 6.6
-Stable tag: 2.6.6
+Tested up to: 6.7
+Stable tag: 2.6.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,8 +46,9 @@ When writing your search string, make sure to wrap your search in forward slashe
 
 == Changelog ==
 
-= 2.6.7 ( beta) =
+= 2.6.7 (2025-01-15) =
 * Fixed secured unserialized data handling to prevent potential vulnerabilities.
+* Verified compatibility with WordPress 6.7
 
 = 2.6.6 (2024-08-21) =
 * Fixed missing URL input sanitization.
